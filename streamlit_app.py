@@ -50,7 +50,7 @@ try:
 # take the json version of the response and normalise it
     #fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # output it the screen as a table
-    back_from_function = get_frutyvice_data(fruit_choice)
+    back_from_function = get_fruityvice_data(fruit_choice)
     streamlit.dataframe(back_from_function)
 except URLError as e:
   streamlit.error()
